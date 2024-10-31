@@ -8,4 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  //tablet
+@media screen and (max-width: 1070px) {
+  background-image: url('../../assets/technology/background-technology-tablet.jpg');
+  }
+  
+  //mobile
+  @media screen and (max-width: 800px) {
+    background-image: url('../../assets/technology/background-technology-mobile.jpg');
+  }
 }
