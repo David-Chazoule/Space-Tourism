@@ -6,16 +6,110 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  color: white;
 
   //tablet
-@media screen and (max-width: 1070px) {
-  background-image: url('../../assets/background/background-destination-tablet.jpg');
+  @media screen and (max-width: 1070px) {
+    background-image: url("../../assets/background/background-destination-tablet.jpg");
   }
-  
+
   //mobile
   @media screen and (max-width: 800px) {
-    background-image: url('../../assets/background/background-destination-mobile.jpg');
+    background-image: url("../../assets/background/background-destination-mobile.jpg");
+  }
+
+  h1 {
+    font-family: $fontBarlow;
+  }
+
+  .destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .information-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .destination-choice {
+        display: flex;
+        width: 100%;
+
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          margin: 10px;
+          font-size: 18px;
+          font-family: $fontBarlow;
+        }
+      }
+
+      .info-planete {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+        h1 {
+          font-family: $fontBellefair;
+          font-size: 5em;
+        }
+
+        p {
+          font-family: $fontBarlow;
+          font-size: 1.5em;
+          width: 50%;
+
+        }
+      }
+       
+      .line-box{
+        display: flex;
+        width: 100%;
+        margin: 10px 0;
+        .line {
+          
+          height: 1px;
+          background-color: #454750;
+          
+          width: 80%;
+          
+        }
+      }
+      
+
+      .distance-time-box {
+        display: flex;
+        width: 100%;
+
+
+        div {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
+
+          h5 {
+            font-family: $fontBarlow;
+          }
+
+          h3 {
+            font-family: $fontBellefair;
+          }
+        }
+      }
+    }
   }
 }
