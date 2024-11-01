@@ -40,6 +40,12 @@ background-image: url("../../assets/background/background-crew-desktop.jpg");
     display: grid;
     margin: 0 20px 0 6vh;
     grid-template-columns: 1fr 1fr;
+
+    //tablet
+  @media screen and (max-width: 1070px) {
+    display: flex;
+    flex-direction: column;
+  }
   }
 
   .member_information {

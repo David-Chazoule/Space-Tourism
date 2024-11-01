@@ -10,12 +10,107 @@
   justify-content: center;
 
   //tablet
-@media screen and (max-width: 1070px) {
-  background-image: url('../../assets/background/background-home-tablet.jpg');
+  @media screen and (max-width: 1070px) {
+    background-image: url("../../assets/background/background-home-tablet.jpg");
   }
-  
+
   //mobile
   @media screen and (max-width: 800px) {
-    background-image: url('../../assets/background/background-home-mobile.jpg');
+    background-image: url("../../assets/background/background-home-mobile.jpg");
+  }
+
+  div {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    margin: 12vh 6vh 0 6vh;
+
+    //tablet
+    @media screen and (max-width: 1070px) {
+      display: flex;
+      flex-direction: column;
+      margin: 10vh 0 0 0;
+    }
+
+    //mobile
+    @media screen and (max-width: 800px) {
+    }
+    .title_description-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+
+      //tablet
+      @media screen and (max-width: 1070px) {
+        align-items: center;
+        justify-content: center;
+      }
+
+      //mobile
+      @media screen and (max-width: 800px) {
+      }
+
+      h5 {
+        margin: 10px;
+        font-size: 2em;
+        font-family: $fontBarlow;
+        color: #a2a7c5;
+      }
+
+      h1 {
+        margin: 10px;
+        font-size: 10em;
+        font-family: $fontBellefair;
+        font-weight: 400;
+      }
+
+      p {
+        font-family: $fontBarlow;
+        font-size: 1.5em;
+        width: 55%;
+        margin: 10px;
+        color: #a2a7c5;
+
+        //tablet
+        @media screen and (max-width: 1070px) {
+          width: 45%;
+        }
+
+        //mobile
+        @media screen and (max-width: 800px) {
+        }
+      }
+    }
+
+    .btn-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      //tablet
+      @media screen and (max-width: 1070px) {
+      }
+
+      //mobile
+      @media screen and (max-width: 800px) {
+      }
+
+      button {
+        border: none;
+        border-radius: 200px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        cursor: pointer;
+      }
+    }
   }
 }

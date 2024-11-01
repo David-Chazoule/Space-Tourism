@@ -3,22 +3,22 @@
  export const nav =[
     {
       num: "00",
-      nav: "Home",
+      nav: "HOME",
       route: "Home"
     },
     {
       num: "01",
-      nav: "Destination",
+      nav: "DESTINATION",
       route: "Destination"
     },
     {
       num: "02",
-      nav: "Crew",
+      nav: "CREW",
       route: "Crew"
     },
     {
       num: "03",
-      nav: "Technology",
+      nav: "TECHNOLOGY",
       route: "Technology"
     }
   ]

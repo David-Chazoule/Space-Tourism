@@ -16,15 +16,15 @@
   }
 
   .logo_container {
-    width: 40%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .line {
       width: 80%;
-      height: 6px;
-      background-color: black;
+      height: 1px;
+      background-color: #454750;
 
       //tablet
       @media screen and (max-width: 1070px) {
@@ -34,12 +34,12 @@
   }
 
   .navbar_container {
-    width: 60%;
-    height: 8vh;
+    width: 100%;
+    height: 10vh;
     display: flex;
     align-items: center;
     color: white;
-    background-color: rgba(255, 255, 255, 0.183);
+    background-color: rgba(255, 255, 255, 0.044);
     backdrop-filter: blur(1em);
 
     //tablet
@@ -64,8 +64,8 @@
 
     .line {
       width: 2em;
-      height: 6px;
-      background-color: black;
+      height: 1px;
+      background-color: #454750;
 
       //tablet
       @media screen and (max-width: 1070px) {
