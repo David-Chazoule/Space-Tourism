@@ -33,16 +33,16 @@ function Crew() {
   return (
     <div className="crew_container">
       <div className="title-box">
-        <h2>
+        <h1 className="title-page">
           <span>02</span> MEET YOUR CREW
-        </h2>
+        </h1>
       </div>
 
       {currentMember && (
         <div className="member_container">
           <div className="member_information">
-            <h2>{currentMember.role}</h2>
-            <h1>{currentMember.name}</h1>
+            <h2>{currentMember.role.toUpperCase()}</h2>
+            <h1>{currentMember.name.toUpperCase()}</h1>
             <p>{currentMember.bio}</p>
             <div className="crew-controls">
               {crew.map((_, index) => (

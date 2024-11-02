@@ -31,46 +31,53 @@ function Destination() {
 
   return (
     <div className="destination_container">
-      <h1>01 PICK YOUR DESTINATION</h1>
-      {currentDestination && (
-        <div className="destination">
-          <div className="img-box">
-            <img src={`${currentDestination.images.png}`} alt="image-planete" />
-          </div>
-          <div className="information-box">
-            <div className="destination-choice">
-              {destination.map((elem, index) => (
-                <button
-                  key={index}
-                  className={`destination-button ${
-                    index === currentIndex ? "active" : ""
-                  }`}
-                  onClick={() => handleIndexChange(index)}
-                >
-                  {elem.name}
-                </button>
-              ))}
+      <div className="box">
+        <h1 className="title-page">
+          <span>01</span> PICK YOUR DESTINATION
+        </h1>
+        {currentDestination && (
+          <div className="destination">
+            <div className="img-box">
+              <img
+                src={`${currentDestination.images.png}`}
+                alt="image-planete"
+              />
             </div>
-            <div className="info-planete">
-              <h1>{currentDestination.name}</h1>
-              <p>{currentDestination.description}</p>
-            </div>
-            <div className="line-box">
-            <div className="line"></div>
-            </div>
-            <div className="distance-time-box">
-              <div>
-                <h5>AVG. DISTANCE</h5>
-                <h3>{currentDestination.distance}</h3>
+            <div className="information-box">
+              <div className="destination-choice">
+                {destination.map((elem, index) => (
+                  <button
+                    key={index}
+                    className={`destination-button ${
+                      index === currentIndex ? "active" : ""
+                    }`}
+                    onClick={() => handleIndexChange(index)}
+                  >
+                    {elem.name}
+                  </button>
+                ))}
               </div>
-              <div>
-                <h5>EST. TRAVEL TIME</h5>
-                <h3>{currentDestination.travel}</h3>
+              <div className="info-planete">
+                <h1>{currentDestination.name}</h1>
+                <p>{currentDestination.description}</p>
+              </div>
+              <div className="line-box">
+                <div className="line"></div>
+              </div>
+              <div className="distance-time-box">
+                <div>
+                  <h5>AVG. DISTANCE</h5>
+                  <h4>{currentDestination.distance.toUpperCase()}</h4>
+                </div>
+                <div>
+                  <h5>EST. TRAVEL TIME</h5>
+                  <h4>{currentDestination.travel.toUpperCase()}</h4>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
