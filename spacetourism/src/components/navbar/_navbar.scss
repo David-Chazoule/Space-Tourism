@@ -63,6 +63,11 @@
           border-bottom: 2px solid white;
         }
 
+         //tablet
+      @media screen and (max-width: 1070px) {
+        height: 16vh;
+      }
+
         @media screen and (max-width: 800px) {
           margin: 10px;
           font-size: 20px;

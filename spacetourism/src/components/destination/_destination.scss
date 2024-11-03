@@ -14,6 +14,7 @@
   //tablet
   @media screen and (max-width: 1070px) {
     background-image: url("../../assets/background/background-destination-tablet.jpg");
+    height: auto;
   }
 
   //mobile
@@ -25,10 +26,31 @@
     display: flex;
     flex-direction: column;
     margin-top: 14vh;
+
+    //tablet
+    @media screen and (max-width: 1070px) {
+      align-items: center;
+      justify-content: center;
+      margin-top: 24vh;
+    }
+
+    //mobile
+    @media screen and (max-width: 800px) {
+    }
+
     .title-page {
       font-family: $fontBarlow;
       margin-left: 14vh;
       letter-spacing: 0.2em;
+
+      @media screen and (max-width: 1070px) {
+        margin-bottom: 10vh;
+        margin-left: 0;
+      }
+
+      //mobile
+      @media screen and (max-width: 800px) {
+      }
 
       span {
         color: #6f7074;
@@ -43,10 +65,35 @@
       height: auto;
       margin: 12vh 0 0 0;
 
+      @media screen and (max-width: 1070px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+
+      //mobile
+      @media screen and (max-width: 800px) {
+      }
+
       .img-box {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 1070px) {
+          width: 100%;
+          margin-bottom: 6vh;
+
+          img {
+            width: 40%;
+          }
+        }
+
+        //mobile
+        @media screen and (max-width: 800px) {
+        }
       }
 
       .information-box {
@@ -62,6 +109,16 @@
           height: 5vh;
           margin-bottom: 40px;
 
+          @media screen and (max-width: 1070px) {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+
+          //mobile
+          @media screen and (max-width: 800px) {
+          }
+
           .destination-button {
             background-color: transparent;
             border: none;
@@ -76,6 +133,15 @@
 
             &:hover {
               border-bottom: 3px solid #a2a7c5;
+            }
+
+            @media screen and (max-width: 1070px) {
+              margin: 0 1em;
+              padding: 0 0 1em 0;
+            }
+
+            //mobile
+            @media screen and (max-width: 800px) {
             }
           }
           .active {
@@ -96,6 +162,16 @@
           width: 100%;
           letter-spacing: 0.1em;
           margin-bottom: 40px;
+
+          @media screen and (max-width: 1070px) {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+
+          //mobile
+          @media screen and (max-width: 800px) {
+          }
 
           h1 {
             font-family: $fontBellefair;
@@ -119,6 +195,15 @@
           justify-content: flex-start;
           width: 100%;
           margin: 20px 0;
+
+          @media screen and (max-width: 1070px) {
+            align-items: center;
+            justify-content: center;
+          }
+
+          //mobile
+          @media screen and (max-width: 800px) {
+          }
           .line {
             height: 1px;
             background-color: #454750;
@@ -130,12 +215,30 @@
           display: flex;
           width: 100%;
 
+          @media screen and (max-width: 1070px) {
+            align-items: center;
+            justify-content: center;
+          }
+
+          //mobile
+          @media screen and (max-width: 800px) {
+          }
+
           div {
             display: flex;
             width: 36%;
             flex-direction: column;
             margin: 10px;
             letter-spacing: 0.2em;
+
+            @media screen and (max-width: 1070px) {
+              align-items: center;
+              justify-content: center;
+            }
+
+            //mobile
+            @media screen and (max-width: 800px) {
+            }
 
             h5 {
               font-family: $fontBarlow;
