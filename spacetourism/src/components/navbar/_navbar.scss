@@ -1,17 +1,24 @@
 .navbar {
   display: flex;
   width: 100%;
+  height: 100%;
 
   nav {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 800px) {
+      align-items: start;
+    }
 
     ul {
       margin: 6px;
       display: flex;
-      width: 70%;
+      width: 80%;
+      height: 100%;
       align-items: center;
       justify-content: space-between;
 
@@ -25,6 +32,7 @@
         flex-direction: column;
         align-items: start;
         width: 100%;
+        height: auto;
       }
 
       .closing-box {
@@ -33,20 +41,27 @@
         //mobile
         @media screen and (max-width: 800px) {
           display: flex;
-          align-items: flex-end;
+          align-items: flex-start;
           justify-content: flex-end;
           width: 100%;
-          flex-grow: 1;
         }
       }
 
       li {
-        display: inline-block;
+        display: flex;
         text-decoration: none;
         color: white;
         font-family: $fontBarlow;
         font-size: 18px;
         letter-spacing: 0.2em;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
 
         @media screen and (max-width: 800px) {
           margin: 10px;
@@ -56,8 +71,15 @@
 
         span {
           font-weight: 600;
-          margin-right: 2px;
+          margin-right: 6px;
         }
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .active {
+        border-bottom: 2px solid white;
       }
     }
   }

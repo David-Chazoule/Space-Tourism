@@ -2,6 +2,7 @@ import { nav } from "../../data/nav";
 import { Link } from "react-router-dom";
 import { showMenuProps } from "../header/Header";
 import cross from "../../assets/shared/icon-close.svg";
+import { useState } from "react";
 
 interface NavItem {
   num: string;
@@ -9,7 +10,15 @@ interface NavItem {
   route: string;
 }
 
-function Navbar({ showMenu, handleMenu }: showMenuProps) {
+function Navbar({ handleMenu }: showMenuProps) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    setActiveIndex(index);
+  };
+
+
+
   return (
     <div className="navbar">
       <nav>
@@ -20,7 +29,10 @@ function Navbar({ showMenu, handleMenu }: showMenuProps) {
           {nav &&
             nav.map((elem: NavItem, index: number) => (
               <Link to={`/${elem.route}`} key={index}>
-                <li>
+                <li
+                  onClick={() => handleClick(index)}
+                  className={index === activeIndex ? "active" : ""}
+                >
                   <span>{elem.num}</span> {elem.nav}
                 </li>
               </Link>

@@ -30,11 +30,12 @@ function Technology() {
   return (
     <div className="technology_container">
       <div className="technology-box">
-        <h1>
+        <h1 className="title-page">
           <span>03</span> SPACE LAUNCH 101{" "}
         </h1>
         {currentLaunch && (
           <div className="information-launch-box">
+            <div className="information-left">
             <div className="lanch-selector-box">
               {launch.map((_, index) => (
                 <button
@@ -48,8 +49,9 @@ function Technology() {
             </div>
             <div className="bio-lanch">
               <p>THE TERMINOLOGY</p>
-              <h1>{currentLaunch.name}</h1>
+              <h1>{currentLaunch.name.toUpperCase()}</h1>
               <p className="description">{currentLaunch.description}</p>
+            </div>
             </div>
             <div className="img-box">
               <img

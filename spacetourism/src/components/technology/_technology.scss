@@ -10,12 +10,108 @@
   justify-content: center;
 
   //tablet
-@media screen and (max-width: 1070px) {
-  background-image: url('../../assets/background/background-technology-tablet.jpg');
+  @media screen and (max-width: 1070px) {
+    background-image: url("../../assets/background/background-technology-tablet.jpg");
   }
-  
+
   //mobile
   @media screen and (max-width: 800px) {
-    background-image: url('../../assets/background/background-technology-mobile.jpg');
+    background-image: url("../../assets/background/background-technology-mobile.jpg");
+  }
+
+  .technology-box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 8vh;
+    justify-content: center;
+
+    .title-page {
+      font-family: $fontBarlow;
+      letter-spacing: 0.2em;
+      margin: 10vh 22vh;
+
+      span {
+        color: #6f7074;
+        margin-right: 6px;
+      }
+    }
+
+    .information-launch-box {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1.5fr 1fr;
+      justify-content: center;
+      align-items: center;
+      justify-items: end;
+
+      .information-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10vh;
+        .lanch-selector-box {
+          display: flex;
+          flex-direction: column;
+          margin: 0 10vh;
+
+          button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid #454750;
+            padding: 20px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-family: $fontBellefair;
+            font-size: 2em;
+            cursor: pointer;
+
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+
+          .active {
+            background-color: white;
+            color: black;
+          }
+        }
+
+        .bio-lanch {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 20px;
+
+          p {
+            font-family: $fontBarlow;
+            font-size: 1.5em;
+            width: 100%;
+            color: #a2a7c5;
+            margin-bottom: 6px;
+          }
+
+          h1 {
+            font-family: $fontBellefair;
+            font-size: 3.5em;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+          }
+
+          .description {
+            font-size: 1.5em;
+            line-height: 1.3em;
+          }
+        }
+      }
+    }
   }
 }

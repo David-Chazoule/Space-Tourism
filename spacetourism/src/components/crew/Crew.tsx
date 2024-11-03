@@ -32,6 +32,7 @@ function Crew() {
 
   return (
     <div className="crew_container">
+      <div className="box">
       <div className="title-box">
         <h1 className="title-page">
           <span>02</span> MEET YOUR CREW
@@ -57,11 +58,14 @@ function Crew() {
             </div>
           </div>
           <div className="img-crew">
-            <img src={`${currentMember.images.png}`} alt="crew-img" />
+            <img className={`${currentIndex===0?"img-space":""}`} src={`${currentMember.images.png}`} alt="crew-img" />
           </div>
         </div>
       )}
     </div>
+
+      </div>
+     
   );
 }
 
