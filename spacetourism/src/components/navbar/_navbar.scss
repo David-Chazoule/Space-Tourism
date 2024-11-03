@@ -63,10 +63,11 @@
           border-bottom: 2px solid white;
         }
 
-         //tablet
-      @media screen and (max-width: 1070px) {
-        height: 16vh;
-      }
+        //tablet
+        @media screen and (max-width: 1070px) {
+          height: 16vh;
+          font-size: 16px;
+        }
 
         @media screen and (max-width: 800px) {
           margin: 10px;

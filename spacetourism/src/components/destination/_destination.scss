@@ -36,6 +36,7 @@
 
     //mobile
     @media screen and (max-width: 800px) {
+      margin-top: 18vh;
     }
 
     .title-page {
@@ -44,12 +45,17 @@
       letter-spacing: 0.2em;
 
       @media screen and (max-width: 1070px) {
-        margin-bottom: 10vh;
+        margin-bottom: 4vh;
         margin-left: 0;
       }
 
       //mobile
       @media screen and (max-width: 800px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 20px;
       }
 
       span {
@@ -113,10 +119,12 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            margin-bottom: 20px;
           }
 
           //mobile
           @media screen and (max-width: 800px) {
+            width: 80%;
           }
 
           .destination-button {
@@ -137,11 +145,12 @@
 
             @media screen and (max-width: 1070px) {
               margin: 0 1em;
-              padding: 0 0 1em 0;
+              padding: 0 0 0.6em 0;
             }
 
             //mobile
             @media screen and (max-width: 800px) {
+              margin: 0 10px;
             }
           }
           .active {
@@ -178,6 +187,11 @@
             font-size: 5em;
             font-weight: 400;
             margin-bottom: 20px;
+
+            //mobile
+            @media screen and (max-width: 800px) {
+              font-size: 3em;
+            }
           }
 
           p {
@@ -186,6 +200,12 @@
             width: 50%;
             line-height: 1.3em;
             color: #a2a7c5;
+
+            //mobile
+            @media screen and (max-width: 800px) {
+              width: 80%;
+              font-size: 18px;
+            }
           }
         }
 
@@ -218,6 +238,7 @@
           @media screen and (max-width: 1070px) {
             align-items: center;
             justify-content: center;
+            margin-bottom: 1vh;
           }
 
           //mobile
@@ -232,6 +253,7 @@
             letter-spacing: 0.2em;
 
             @media screen and (max-width: 1070px) {
+              width: 100%;
               align-items: center;
               justify-content: center;
             }
@@ -246,12 +268,20 @@
               color: #a2a7c5;
               font-size: 16px;
               margin-bottom: 10px;
+
+              //mobile
+              @media screen and (max-width: 800px) {
+              }
             }
 
             h4 {
               font-family: $fontBellefair;
               font-weight: 200;
               font-size: 30px;
+
+              @media screen and (max-width: 800px) {
+                font-size: 18px;
+              }
             }
           }
         }

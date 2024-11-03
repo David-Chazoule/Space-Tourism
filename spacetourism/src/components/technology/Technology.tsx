@@ -54,8 +54,12 @@ function Technology() {
             </div>
             </div>
             <div className="img-box">
-              <img
+              <img className="img-portrait"
                 src={`${currentLaunch.images.portrait}`}
+                alt="image-planete"
+              />
+               <img className="img-landscape"
+                src={`${currentLaunch.images.landscape}`}
                 alt="image-planete"
               />
             </div>
