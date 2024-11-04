@@ -24,17 +24,32 @@
     display: flex;
     flex-direction: column;
     color: white;
-    margin-top: 8vh;
+    margin-top: 18vh;
     justify-content: center;
+
+    //tablet
+    @media screen and (max-width: 1070px) {
+    }
+    //mobile
+    @media screen and (max-width: 800px) {
+      align-items: center;
+      width: 100%;
+    }
 
     .title-page {
       font-family: $fontBarlow;
       letter-spacing: 0.2em;
-      margin: 10vh 22vh;
+      margin: 4vh 18vh;
 
       //tablet
       @media screen and (max-width: 1070px) {
-        margin: 10vh 4vh;
+        margin: 4vh 4vh;
+      }
+
+      //mobile
+      @media screen and (max-width: 800px) {
+        font-size: 24px;
+        margin: 4vh 4vh;
       }
 
       span {
@@ -61,6 +76,7 @@
 
       //mobile
       @media screen and (max-width: 800px) {
+        margin: 10px 0;
       }
 
       .information-left {
@@ -68,18 +84,20 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 6vh;
+        padding: 3vh;
 
         //tablet
         @media screen and (max-width: 1070px) {
           display: flex;
           flex-direction: column;
           padding: 4vh;
+          margin-bottom: 4vh;
           width: 80%;
         }
 
         //mobile
         @media screen and (max-width: 800px) {
+          width: 100%;
         }
 
         .lanch-selector-box {
@@ -130,6 +148,9 @@
 
             //mobile
             @media screen and (max-width: 800px) {
+              height: 40px;
+              width: 40px;
+              font-size: 1em;
             }
           }
 
@@ -168,6 +189,11 @@
             @media screen and (max-width: 1070px) {
               margin-bottom: 18px;
             }
+
+            //mobile
+            @media screen and (max-width: 800px) {
+              font-size: 1.3em;
+            }
           }
 
           h1 {
@@ -181,11 +207,21 @@
             @media screen and (max-width: 1070px) {
               margin-bottom: 24px;
             }
+
+            //mobile
+            @media screen and (max-width: 800px) {
+              font-size: 2em;
+            }
           }
 
           .description {
             font-size: 1.5em;
             line-height: 1.3em;
+
+            //mobile
+            @media screen and (max-width: 800px) {
+              font-size: 1.2em;
+            }
           }
         }
       }
@@ -199,7 +235,6 @@
         }
 
         .img-portrait {
-          width: 100%;
           @media screen and (max-width: 1070px) {
             display: none;
           }
@@ -211,6 +246,10 @@
           @media screen and (max-width: 1070px) {
             display: flex;
             width: 100%;
+          }
+
+          @media screen and (max-width: 800px) {
+            display: flex;
           }
         }
       }

@@ -33,39 +33,42 @@ function Crew() {
   return (
     <div className="crew_container">
       <div className="box">
-      <div className="title-box">
-        <h1 className="title-page">
-          <span>02</span> MEET YOUR CREW
-        </h1>
-      </div>
+        <div className="title-box">
+          <h1 className="title-page">
+            <span>02</span> MEET YOUR CREW
+          </h1>
+        </div>
 
-      {currentMember && (
-        <div className="member_container">
-          <div className="member_information">
-            <h2>{currentMember.role.toUpperCase()}</h2>
-            <h1>{currentMember.name.toUpperCase()}</h1>
-            <p>{currentMember.bio}</p>
-            <div className="crew-controls">
-              {crew.map((_, index) => (
-                <button
-                  key={index}
-                  className={`crew-button ${
-                    index === currentIndex ? "active" : ""
-                  }`}
-                  onClick={() => handleIndexChange(index)}
-                ></button>
-              ))}
+        {currentMember && (
+          <div className="member_container">
+            <div className="member_information">
+              <h2>{currentMember.role.toUpperCase()}</h2>
+              <h1>{currentMember.name.toUpperCase()}</h1>
+              <p>{currentMember.bio}</p>
+              <div className="crew-controls">
+                {crew.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`crew-button ${
+                      index === currentIndex ? "active" : ""
+                    }`}
+                    onClick={() => handleIndexChange(index)}
+                  ></button>
+                ))}
+              </div>
+            </div>
+            <div className="img-crew">
+              <img
+                className={`${currentIndex === 0 ? "img-space" : ""}`}
+                src={`${currentMember.images.png}`}
+                alt="crew-img"
+              />
+              <div className="line"></div>
             </div>
           </div>
-          <div className="img-crew">
-            <img className={`${currentIndex===0?"img-space":""}`} src={`${currentMember.images.png}`} alt="crew-img" />
-          </div>
-        </div>
-      )}
-    </div>
-
+        )}
       </div>
-     
+    </div>
   );
 }
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="home_container">
@@ -13,7 +15,11 @@ function Home() {
           </p>
         </div>
         <div className="btn-box">
-          <button>EXPLORE</button>
+          <div className="circle-superior">
+            <Link to="/Destination">
+              <button>EXPLORE</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
