@@ -81,6 +81,10 @@
       width: 50vw;
       visibility: visible;
     }
+
+    @media screen and (max-width: 600px) {
+      width: 60vw;
+    }
   }
 
   .burger {

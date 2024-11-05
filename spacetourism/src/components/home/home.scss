@@ -12,6 +12,7 @@
   //tablet
   @media screen and (max-width: 1070px) {
     background-image: url("../../assets/background/background-home-tablet.jpg");
+    height: auto;
   }
 
   //mobile
@@ -93,10 +94,12 @@
 
       //tablet
       @media screen and (max-width: 1070px) {
+        margin: 0;
       }
 
       //mobile
       @media screen and (max-width: 800px) {
+        margin-top: 10px;
       }
 
       .circle-superior {
@@ -106,6 +109,11 @@
         height: 320px;
         width: 320px;
         border-radius: 50%;
+
+        //tablet
+        @media screen and (max-width: 1070px) {
+          margin: 20px;
+        }
 
         button {
           border: none;

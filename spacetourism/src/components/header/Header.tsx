@@ -6,6 +6,7 @@ import { useState } from "react";
 export interface showMenuProps {
   showMenu: boolean;
   handleMenu: () => void;
+  setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 function Header() {
@@ -26,7 +27,11 @@ function Header() {
 
       <div className={`navbar_container ${showMenu ? "show-nav" : ""}`}>
         <div className="line"></div>
-        <Navbar showMenu={showMenu} handleMenu={handleMenu} />
+        <Navbar
+          showMenu={showMenu}
+          setShowMenu={setShowMenu}
+          handleMenu={handleMenu}
+        />
       </div>
       <img
         className="burger"

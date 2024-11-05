@@ -10,14 +10,13 @@ interface NavItem {
   route: string;
 }
 
-function Navbar({ handleMenu }: showMenuProps) {
+function Navbar({ showMenu, setShowMenu, handleMenu }: showMenuProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
     setActiveIndex(index);
+    setShowMenu(!showMenu);
   };
-
-
 
   return (
     <div className="navbar">
