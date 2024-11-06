@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="home_container">
-      <div>
+      <div className="description-container">
         <div className="title_description-box">
           <h5>SO, YOU WANT TO TRAVEL TO</h5>
           <h1>SPACE</h1>
@@ -15,11 +15,11 @@ function Home() {
           </p>
         </div>
         <div className="btn-box">
-          <div className="circle-superior">
-            <Link to="/Destination">
-              <button>EXPLORE</button>
-            </Link>
-          </div>
+          <Link className="link" to="/Destination">
+            <div className="content-explore">
+              <p>EXPLORE</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
