@@ -18,7 +18,7 @@ function Destination() {
 
   useEffect(() => {
     axios
-      .get("/data.json")
+      .get( process.env.PUBLIC_URL +"/data.json")
       .then((response) => setDestination(response.data.destinations))
       .catch((error) => console.error("error", error));
   }, []);

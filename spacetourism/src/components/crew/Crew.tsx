@@ -17,7 +17,7 @@ function Crew() {
 
   useEffect(() => {
     axios
-      .get("/data.json")
+      .get( process.env.PUBLIC_URL +"/data.json")
       .then((response) => setCrew(response.data.crew))
       .catch((error) =>
         console.error("erreur lors du chargement du crew", error)

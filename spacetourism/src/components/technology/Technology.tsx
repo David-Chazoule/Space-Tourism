@@ -16,7 +16,7 @@ function Technology() {
 
   useEffect(() => {
     axios
-      .get("/data.json")
+      .get( process.env.PUBLIC_URL +"/data.json")
       .then((response) => setLaunch(response.data.technology))
       .catch((error) => console.error("error", error));
   }, []);
