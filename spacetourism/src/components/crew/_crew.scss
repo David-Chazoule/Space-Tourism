@@ -144,6 +144,11 @@
         line-height: 1.3em;
         letter-spacing: 0.1em;
 
+        //tablet
+        @media screen and (max-width: 1070px) {
+          text-align: center;
+        }
+
         //mobile
         @media screen and (max-width: 800px) {
           font-size: 1.2em;
