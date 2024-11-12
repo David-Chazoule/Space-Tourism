@@ -13,12 +13,13 @@
   //tablet
   @media screen and (max-width: 1070px) {
     background-image: url("../../assets/background/background-home-tablet.jpg");
-    height: auto;
+    min-height: 100vh;
   }
 
   //mobile
   @media screen and (max-width: 800px) {
     background-image: url("../../assets/background/background-home-mobile.jpg");
+    height: auto;
   }
 
   .description-container {
@@ -26,7 +27,6 @@
     width: 100%;
     grid-template-columns: 1fr 1fr;
     color: white;
-
     margin-top: 20vh;
 
     //tablet
@@ -36,6 +36,10 @@
       align-items: center;
       justify-content: center;
       margin-top: 24vh;
+    }
+
+    @media screen and (max-width: 800px) {
+      margin-top: 14vh;
     }
 
     //mobile
@@ -58,7 +62,8 @@
       }
 
       //mobile
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 500px) {
+        margin: 10vh 2vh 0 2vh;
       }
 
       h5 {
@@ -69,6 +74,10 @@
 
         @media screen and (max-width: 800px) {
           font-size: 1.6em;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size: 1.2em;
         }
       }
 
@@ -85,6 +94,10 @@
 
         @media screen and (max-width: 600px) {
           font-size: 5.5em;
+        }
+
+        @media screen and (max-width: 500px) {
+          font-size: 5em;
         }
       }
 
@@ -114,7 +127,6 @@
       font-family: $fontBellefair;
       font-size: 20px;
       width: 100%;
-      height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -138,16 +150,18 @@
       @media screen and (max-width: 1070px) {
         justify-content: center;
         margin-top: 0;
-        height: 47vh;
+        height: auto;
       }
 
       //mobile
       @media screen and (max-width: 800px) {
         margin-top: 10px;
+        height: 38vh;
       }
 
       @media screen and (max-width: 600px) {
         height: 30vh;
+        margin-bottom: 11vh;
       }
 
       .content-explore {
@@ -173,6 +187,13 @@
         @media screen and (max-width: 800px) {
           width: 180px;
           height: 180px;
+          margin: 0;
+        }
+
+        @media screen and (max-width: 500px) {
+          width: 140px;
+          height: 140px;
+          font-size: 20px;
         }
 
         cursor: pointer;
@@ -202,6 +223,11 @@
         @media screen and (max-width: 800px) {
           width: 180px;
           height: 180px;
+        }
+
+        @media screen and (max-width: 500px) {
+          width: 140px;
+          height: 140px;
         }
       }
     }
