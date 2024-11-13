@@ -6,6 +6,7 @@
   position: fixed;
   height: 16vh;
   padding: 6vh 0 6vh 6vh;
+  z-index: 10;
 
   //tablet
   @media screen and (max-width: 1070px) {
