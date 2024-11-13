@@ -35,7 +35,7 @@ Download the project and go through the README.md file. This will provide furthe
 
 The application has been developed using:
 - React.js
-- -Typescript
+- Typescript
 - Sass
 
 ## Installation and Execution
