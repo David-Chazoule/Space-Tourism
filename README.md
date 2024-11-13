@@ -6,7 +6,7 @@
 
 This is my solution to the [Space-Tourism multi-page](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) on Frontend Mentor.
 
-[Online here](https://david-chazoule.github.io/todo-app/)
+[Online here](https://david-chazoule.github.io/Space-Tourism/#/home)
 
 Thanks for checking out this front-end coding challenge.
 
